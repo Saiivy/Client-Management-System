@@ -1,0 +1,45 @@
+{%extends "layout.html"%}
+
+{%block body%}
+
+<form method="post" action="/updateData">
+
+{%for k,v in updateDataDb.items():%}
+
+{%if k=='a':%}
+ <input type="text" name="name" value="{{v}}">
+ {%endif%}
+
+ {%if k=='b':%}
+ <input type="text" name="phone" value="{{v}}">
+ {%endif%}
+
+ {%if k=='c':%}
+ <input type="text" name="rmai" value="{{v}}">
+ {%endif%}
+
+ {%if k=='d':%}
+ <input type="text" name= "reference" value="{{v}}">
+ {%endif%}
+
+ {%if k=='e':%}
+ <input type="text" name="purpose" value="{{v}}">
+ {%endif%}
+
+ {%if k=='f':%}
+ <input type="text" name="email" value="{{v}}">
+ {%endif%}
+
+ {%if k=='g':%}
+ <input type="text" name="status" value="{{v}}">
+ {%endif%}
+
+ {%if k=='h':%}
+ <input type="text" name="notes" value="{{v}}">
+ {%endif%}
+
+ {%endfor%}
+<input type ="submit" value="Edit">
+</form>
+
+{%endblock%}

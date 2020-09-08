@@ -1,0 +1,84 @@
+{%extends "layout.html"%}
+
+    {%block head%}
+    <link href="static/css/form.css" rel="stylesheet" />
+    {%endblock%}
+    {%block body%}
+    <div class="container">
+      <form method="POST" action="/formProcessor">
+        <div class="row">
+        <div class="col-25">
+          <label for="name">Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="name" name="firstname" placeholder="Client's Name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="email" name="email" placeholder="Client's Email..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="RMAI">RMAI</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="rmai" name="rmai" placeholder="RMAI">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="phoneNumber">Phone-Number</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="phone" name="phone" placeholder="client's Phone-Number..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="reference">Reference</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="reference" placeholder="Reference">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Purpose</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="purpose" placeholder="Purpose">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Status</label>
+        </div>
+        <div class="col-75">
+          <select  id="lname" name="status">
+            <option value="Incomplete" name="Incomplete">Incomplete</option>
+            <option value="complete" name="complete">complete</option>
+            <option value="Inprogress" name="inprogress">In-Progress</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Notes</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="Notes" name="notes" placeholder="Notes" style="height:200px">
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    {%endblock%}

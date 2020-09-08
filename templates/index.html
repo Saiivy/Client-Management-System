@@ -1,0 +1,23 @@
+{%extends "layout.html"%}
+{%block head%}
+<link href="static/css/index.css" rel="stylesheet" />
+
+
+{%endblock%}
+{%block body%}
+<a href="{{url_for('form') }}" class="animated-button1">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    Add Clients
+  </a>
+
+  <a href="{{url_for('processForm')}}" class="animated-button1">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    Check Existing
+  </a>
+{%endblock%}
